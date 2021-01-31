@@ -1,0 +1,153 @@
+$mainColor: #000;
+$secondaryColor: #f5f5f5;
+$backgroundColor: #1b5e8b;
+$secondaryBackgroundColor: #1b5e8b81;
+$trebuchet: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+  "Lucida Sans", Arial, sans-serif;
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  min-width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $backgroundColor;
+    a {
+        background-color: $secondaryColor;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+    .add-container {
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .message-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            background-color: $secondaryColor;
+            border-radius: 5px; 
+            width: 600px;
+            gap: 10px;
+            box-shadow: 0 0 5px 2px $mainColor;
+            padding: 5px;
+            h1 {
+                font-family: $trebuchet;
+            }
+
+            .author {
+                width: 98%;
+                padding: 5px 5px;
+                border-radius: 3px;
+            }
+            .message {
+                width: 98%;
+                height: 100px;
+                border-radius: 3px;
+            }
+            .submit-btn {
+                color: $mainColor;
+                border: 2px solid $mainColor;
+                font-family: var(--oswald);
+                font-size: 24px;
+                background-color: transparent;
+                border-radius: 5px;
+                padding: 5px 10px;
+                transition: 0.5s;
+                text-decoration: none;
+                font-family: $trebuchet;
+            }
+            .submit-btn:hover {
+                background-color: $backgroundColor;
+                color: $secondaryColor;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+.title-container {
+  width: 100vw;
+  min-width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: $backgroundColor;
+  border-bottom: 2px solid $mainColor;
+  border-top: 2px solid $mainColor;
+  color: $secondaryColor;
+  h1 {
+    font-family: $trebuchet;
+    font-size: 42px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+}
+
+.message-container {
+  margin: 10px;
+  background-color: $secondaryColor;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 2px $mainColor;
+  ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 10px;
+    li {
+      gap: 10px;
+      .user-name {
+        font-family: $trebuchet;
+        letter-spacing: 1px;
+        font-size: 24px;
+      }
+      .user-text {
+          height: 50px;
+          border: 1px solid $mainColor;
+          border-radius: 3px;
+          letter-spacing: 0.5px;
+          padding: 2px;
+      }
+    }
+  }
+
+}
+
+
+a {
+    color: $mainColor;
+    border: 2px solid $mainColor;
+    font-family: var(--oswald);
+    font-size: 24px;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: 0.5s;
+    text-decoration: none;
+    font-family: $trebuchet;
+  }
+  a:hover {
+    background-color: $backgroundColor;
+    color: $secondaryColor;
+  }

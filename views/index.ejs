@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    <%= title%>
+  </title>
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="title-container">
+      <h1 class="title">
+        <%=title%>
+      </h1>
+    </div>
+    
+    <div class="message-container">
+
+      <ul>
+        <% for(const msg of messages) {%>
+          <li>
+            <div class="user-name"><strong>
+                <%=msg.user%>
+              </strong></div>
+            <div class="user-text">
+              <%=msg.text%>
+            </div>
+            <div class="date-added">
+              <%=msg.added%>
+            </div>
+          </li>
+          <% } %>
+      </ul>
+
+    </div>
+    
+    <a href="/new">Add Message</a>
+  </div>
+</body>
+
+</html>
