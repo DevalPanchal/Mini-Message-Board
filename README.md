@@ -5,7 +5,7 @@ A mini message board made as a project from The Odin Project's, [Project: Mini M
 This project was made using Node and Express. This mini application showcases the basic functionality of an Express application, featuring routes and view engine.
 
 ## Demo
-Here is the live demo to this [project](https://stormy-citadel-85540.herokuapp.com/)
+Here is the live demo to this [project](https://stormy-citadel-85540.herokuapp.com/) on heroku.
 
 ## Run app locally 
 1. `git clone` project to local machine
